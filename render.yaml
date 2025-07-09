@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: v100-telegram-bot
+    schedule: "*/15 * * * *"
+    runtime: python
+    buildCommand: ""
+    startCommand: "python v100_multi_tf_bot.py"
